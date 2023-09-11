@@ -16,6 +16,9 @@
 		A90B98B92AAF1FAA00C2C670 /* MealAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B98B82AAF1FAA00C2C670 /* MealAppTests.swift */; };
 		A90B98C32AAF1FAA00C2C670 /* MealAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B98C22AAF1FAA00C2C670 /* MealAppUITests.swift */; };
 		A90B98C52AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B98C42AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift */; };
+		A9BCDC292AAF24260017F319 /* CoreApi in Frameworks */ = {isa = PBXBuildFile; productRef = A9BCDC282AAF24260017F319 /* CoreApi */; };
+		A9BCDC2B2AAF26A90017F319 /* HomeEndpointItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCDC2A2AAF26A90017F319 /* HomeEndpointItem.swift */; };
+		A9BCDC2D2AAF36260017F319 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCDC2C2AAF36260017F319 /* Widget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		A90B98BE2AAF1FAA00C2C670 /* MealAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B98C22AAF1FAA00C2C670 /* MealAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppUITests.swift; sourceTree = "<group>"; };
 		A90B98C42AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9BCDC2A2AAF26A90017F319 /* HomeEndpointItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpointItem.swift; sourceTree = "<group>"; };
+		A9BCDC2C2AAF36260017F319 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BCDC292AAF24260017F319 /* CoreApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 				A90B98B72AAF1FAA00C2C670 /* MealAppTests */,
 				A90B98C12AAF1FAA00C2C670 /* MealAppUITests */,
 				A90B989F2AAF1FA900C2C670 /* Products */,
+				A9BCDC272AAF24260017F319 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +108,13 @@
 			children = (
 				A90B98A12AAF1FA900C2C670 /* AppDelegate.swift */,
 				A90B98A32AAF1FA900C2C670 /* SceneDelegate.swift */,
+				A9BCDC2A2AAF26A90017F319 /* HomeEndpointItem.swift */,
 				A90B98A52AAF1FA900C2C670 /* ViewController.swift */,
 				A90B98A72AAF1FA900C2C670 /* Main.storyboard */,
 				A90B98AA2AAF1FAA00C2C670 /* Assets.xcassets */,
 				A90B98AC2AAF1FAA00C2C670 /* LaunchScreen.storyboard */,
 				A90B98AF2AAF1FAA00C2C670 /* Info.plist */,
+				A9BCDC2C2AAF36260017F319 /* Widget.swift */,
 			);
 			path = MealApp;
 			sourceTree = "<group>";
@@ -127,6 +136,13 @@
 			path = MealAppUITests;
 			sourceTree = "<group>";
 		};
+		A9BCDC272AAF24260017F319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = MealApp;
+			packageProductDependencies = (
+				A9BCDC282AAF24260017F319 /* CoreApi */,
+			);
 			productName = MealApp;
 			productReference = A90B989E2AAF1FA900C2C670 /* MealApp.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +279,8 @@
 			files = (
 				A90B98A62AAF1FA900C2C670 /* ViewController.swift in Sources */,
 				A90B98A22AAF1FA900C2C670 /* AppDelegate.swift in Sources */,
+				A9BCDC2D2AAF36260017F319 /* Widget.swift in Sources */,
+				A9BCDC2B2AAF26A90017F319 /* HomeEndpointItem.swift in Sources */,
 				A90B98A42AAF1FA900C2C670 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +623,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9BCDC282AAF24260017F319 /* CoreApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreApi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A90B98962AAF1FA900C2C670 /* Project object */;
 }
