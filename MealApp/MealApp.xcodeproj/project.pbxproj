@@ -18,19 +18,22 @@
 		A90B98C52AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B98C42AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift */; };
 		A90F3F442AAF899D002200F6 /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F3F422AAF899D002200F6 /* RestaurantCollectionViewCell.swift */; };
 		A90F3F452AAF899D002200F6 /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90F3F432AAF899D002200F6 /* RestaurantCollectionViewCell.xib */; };
-		A90F3F4B2AAFADE0002200F6 /* StampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90F3F4A2AAFADE0002200F6 /* StampView.xib */; };
-		A92995692AB0E34D003F9660 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92995642AB0E34C003F9660 /* Lato-Regular.ttf */; };
-		A929956A2AB0E34D003F9660 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92995652AB0E34C003F9660 /* Lato-Bold.ttf */; };
-		A929956B2AB0E34D003F9660 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92995662AB0E34C003F9660 /* Lato-Thin.ttf */; };
-		A929956C2AB0E34D003F9660 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92995672AB0E34C003F9660 /* Lato-Light.ttf */; };
-		A929956D2AB0E34D003F9660 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A92995682AB0E34D003F9660 /* Lato-Semibold.ttf */; };
 		A92995702AB0E5B3003F9660 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929956F2AB0E5B3003F9660 /* UIFont+Extension.swift */; };
-		A94E7C842AAFB015005AEE6B /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E7C832AAFB015005AEE6B /* StampView.swift */; };
 		A99B279D2AB111B600081F16 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B279C2AB111B600081F16 /* UICollectionView+Extension.swift */; };
 		A99B279F2AB111FA00081F16 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B279E2AB111FA00081F16 /* UICollectionViewCell+Extension.swift */; };
+		A9A93E732AB32F780066731D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A9A93E722AB32F780066731D /* SDWebImage */; };
+		A9A93E752AB3355D0066731D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A93E742AB3355D0066731D /* UIColor+Extension.swift */; };
 		A9BCDC292AAF24260017F319 /* CoreApi in Frameworks */ = {isa = PBXBuildFile; productRef = A9BCDC282AAF24260017F319 /* CoreApi */; };
 		A9BCDC2B2AAF26A90017F319 /* HomeEndpointItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCDC2A2AAF26A90017F319 /* HomeEndpointItem.swift */; };
 		A9BCDC2D2AAF36260017F319 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCDC2C2AAF36260017F319 /* Widget.swift */; };
+		A9E5968A2AB4EAFD00867DBA /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E596892AB4EAFD00867DBA /* Lato-Bold.ttf */; };
+		A9E5968C2AB4EB0A00867DBA /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E5968B2AB4EB0A00867DBA /* Lato-Light.ttf */; };
+		A9E5968E2AB4EB1500867DBA /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E5968D2AB4EB1500867DBA /* Lato-Regular.ttf */; };
+		A9E596902AB4EB1C00867DBA /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E5968F2AB4EB1C00867DBA /* Lato-Semibold.ttf */; };
+		A9E596922AB4EB2500867DBA /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E596912AB4EB2500867DBA /* Lato-Thin.ttf */; };
+		A9E596942AB5CDB600867DBA /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E596932AB5CDB600867DBA /* StampView.swift */; };
+		A9E596962AB5CE4700867DBA /* StampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E596952AB5CE4700867DBA /* StampView.xib */; };
+		A9E596982AB5D2AC00867DBA /* LoadingShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E596972AB5D2AC00867DBA /* LoadingShowable.swift */; };
 		A9E7CEB02AB0A92700094991 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7CEAF2AB0A92700094991 /* NibView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,18 +70,20 @@
 		A90B98C42AAF1FAA00C2C670 /* MealAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A90F3F422AAF899D002200F6 /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		A90F3F432AAF899D002200F6 /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
-		A90F3F4A2AAFADE0002200F6 /* StampView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StampView.xib; sourceTree = "<group>"; };
-		A92995642AB0E34C003F9660 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../Lato-Regular.ttf"; sourceTree = "<group>"; };
-		A92995652AB0E34C003F9660 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../Lato-Bold.ttf"; sourceTree = "<group>"; };
-		A92995662AB0E34C003F9660 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../../../../Lato-Thin.ttf"; sourceTree = "<group>"; };
-		A92995672AB0E34C003F9660 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../Lato-Light.ttf"; sourceTree = "<group>"; };
-		A92995682AB0E34D003F9660 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Semibold.ttf"; path = "../../../../Lato-Semibold.ttf"; sourceTree = "<group>"; };
 		A929956F2AB0E5B3003F9660 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		A94E7C832AAFB015005AEE6B /* StampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
 		A99B279C2AB111B600081F16 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		A99B279E2AB111FA00081F16 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		A9A93E742AB3355D0066731D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A9BCDC2A2AAF26A90017F319 /* HomeEndpointItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpointItem.swift; sourceTree = "<group>"; };
 		A9BCDC2C2AAF36260017F319 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		A9E596892AB4EAFD00867DBA /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		A9E5968B2AB4EB0A00867DBA /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		A9E5968D2AB4EB1500867DBA /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		A9E5968F2AB4EB1C00867DBA /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		A9E596912AB4EB2500867DBA /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		A9E596932AB5CDB600867DBA /* StampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
+		A9E596952AB5CE4700867DBA /* StampView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StampView.xib; sourceTree = "<group>"; };
+		A9E596972AB5D2AC00867DBA /* LoadingShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingShowable.swift; sourceTree = "<group>"; };
 		A9E7CEAF2AB0A92700094991 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A93E732AB32F780066731D /* SDWebImage in Frameworks */,
 				A9BCDC292AAF24260017F319 /* CoreApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,8 +194,8 @@
 		A90F3F482AAFAD8D002200F6 /* StampView */ = {
 			isa = PBXGroup;
 			children = (
-				A90F3F4A2AAFADE0002200F6 /* StampView.xib */,
-				A94E7C832AAFB015005AEE6B /* StampView.swift */,
+				A9E596932AB5CDB600867DBA /* StampView.swift */,
+				A9E596952AB5CE4700867DBA /* StampView.xib */,
 			);
 			path = StampView;
 			sourceTree = "<group>";
@@ -204,11 +210,11 @@
 		A92995632AB0E339003F9660 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				A92995662AB0E34C003F9660 /* Lato-Thin.ttf */,
-				A92995652AB0E34C003F9660 /* Lato-Bold.ttf */,
-				A92995642AB0E34C003F9660 /* Lato-Regular.ttf */,
-				A92995682AB0E34D003F9660 /* Lato-Semibold.ttf */,
-				A92995672AB0E34C003F9660 /* Lato-Light.ttf */,
+				A9E596912AB4EB2500867DBA /* Lato-Thin.ttf */,
+				A9E5968F2AB4EB1C00867DBA /* Lato-Semibold.ttf */,
+				A9E5968D2AB4EB1500867DBA /* Lato-Regular.ttf */,
+				A9E5968B2AB4EB0A00867DBA /* Lato-Light.ttf */,
+				A9E596892AB4EAFD00867DBA /* Lato-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				A929956F2AB0E5B3003F9660 /* UIFont+Extension.swift */,
 				A99B279C2AB111B600081F16 /* UICollectionView+Extension.swift */,
 				A99B279E2AB111FA00081F16 /* UICollectionViewCell+Extension.swift */,
+				A9A93E742AB3355D0066731D /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E7CEAF2AB0A92700094991 /* NibView.swift */,
+				A9E596972AB5D2AC00867DBA /* LoadingShowable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 			name = MealApp;
 			packageProductDependencies = (
 				A9BCDC282AAF24260017F319 /* CoreApi */,
+				A9A93E722AB32F780066731D /* SDWebImage */,
 			);
 			productName = MealApp;
 			productReference = A90B989E2AAF1FA900C2C670 /* MealApp.app */;
@@ -329,6 +338,9 @@
 				Base,
 			);
 			mainGroup = A90B98952AAF1FA900C2C670;
+			packageReferences = (
+				A9A93E712AB32F780066731D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = A90B989F2AAF1FA900C2C670 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,16 +357,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A929956A2AB0E34D003F9660 /* Lato-Bold.ttf in Resources */,
-				A929956B2AB0E34D003F9660 /* Lato-Thin.ttf in Resources */,
 				A90B98AE2AAF1FAA00C2C670 /* LaunchScreen.storyboard in Resources */,
-				A929956C2AB0E34D003F9660 /* Lato-Light.ttf in Resources */,
-				A92995692AB0E34D003F9660 /* Lato-Regular.ttf in Resources */,
-				A929956D2AB0E34D003F9660 /* Lato-Semibold.ttf in Resources */,
+				A9E5968A2AB4EAFD00867DBA /* Lato-Bold.ttf in Resources */,
+				A9E596902AB4EB1C00867DBA /* Lato-Semibold.ttf in Resources */,
 				A90B98AB2AAF1FAA00C2C670 /* Assets.xcassets in Resources */,
+				A9E5968E2AB4EB1500867DBA /* Lato-Regular.ttf in Resources */,
 				A90F3F452AAF899D002200F6 /* RestaurantCollectionViewCell.xib in Resources */,
-				A90F3F4B2AAFADE0002200F6 /* StampView.xib in Resources */,
+				A9E596922AB4EB2500867DBA /* Lato-Thin.ttf in Resources */,
 				A90B98A92AAF1FA900C2C670 /* Main.storyboard in Resources */,
+				A9E596962AB5CE4700867DBA /* StampView.xib in Resources */,
+				A9E5968C2AB4EB0A00867DBA /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,13 +393,15 @@
 			files = (
 				A90B98A62AAF1FA900C2C670 /* HomeViewController.swift in Sources */,
 				A90B98A22AAF1FA900C2C670 /* AppDelegate.swift in Sources */,
+				A9E596942AB5CDB600867DBA /* StampView.swift in Sources */,
 				A9BCDC2D2AAF36260017F319 /* Widget.swift in Sources */,
+				A9A93E752AB3355D0066731D /* UIColor+Extension.swift in Sources */,
+				A9E596982AB5D2AC00867DBA /* LoadingShowable.swift in Sources */,
 				A90F3F442AAF899D002200F6 /* RestaurantCollectionViewCell.swift in Sources */,
 				A9E7CEB02AB0A92700094991 /* NibView.swift in Sources */,
 				A9BCDC2B2AAF26A90017F319 /* HomeEndpointItem.swift in Sources */,
 				A99B279D2AB111B600081F16 /* UICollectionView+Extension.swift in Sources */,
 				A92995702AB0E5B3003F9660 /* UIFont+Extension.swift in Sources */,
-				A94E7C842AAFB015005AEE6B /* StampView.swift in Sources */,
 				A90B98A42AAF1FA900C2C670 /* SceneDelegate.swift in Sources */,
 				A99B279F2AB111FA00081F16 /* UICollectionViewCell+Extension.swift in Sources */,
 			);
@@ -732,7 +746,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A9A93E712AB32F780066731D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		A9A93E722AB32F780066731D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9A93E712AB32F780066731D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		A9BCDC282AAF24260017F319 /* CoreApi */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreApi;
