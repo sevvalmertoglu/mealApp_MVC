@@ -38,14 +38,14 @@ struct Restaurant: Decodable {
     let imageUrl: String?
     let logoUrl: String?
     let deeplink, name: String?
-    let averageDeliveryInterval: String?
+    let averageDeliveryInterval: String
     let minBasketPrice: Int?
-    let kitchen: String?
+    let kitchen: String
     let rating: Double?
     let ratingText, campaignText: String?
     let ratingBackgroundColor: String?
     let deliveryTypeImage: String?
-    let workingHours: String?
+    let workingHours: String
     let workingHoursInterval: [String]?
     let location: Location?
     let closed, isClosed: Bool?

@@ -19,7 +19,7 @@ class NibView: UIView {
         fromNib()
     }
     
-    //Hangi classtam geliyorsam o classın ismini al String'e çevir, ve o zip'i ayağa kaldır. (zaten class ismi ve zip ismini hep aynı veriyoruz.)
+    //Hangi classtam geliyorsam o classın ismini al String'e çevir, ve o xib'i ayağa kaldır. (zaten class ismi ve xib ismini hep aynı veriyoruz.)
     func fromNib() {
         if let contentView = Bundle.main.loadNibNamed(String(describing: type(of: self)),
                                                       owner: self,

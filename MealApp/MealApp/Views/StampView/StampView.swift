@@ -2,7 +2,7 @@
 //  StampView.swift
 //  MealApp
 //
-//  Created by Şevval Mertoğlu on 11.09.2023.
+//  Created by Şevval Mertoğlu on 16.09.2023.
 //
 
 import UIKit
@@ -15,11 +15,12 @@ final class StampView: NibView {
     @IBOutlet private weak var stampLabel: UILabel!
     
     func configure(title: String,
-                titleColor: UIColor = .white,
-                font: UIFont? = .semibold(12),
-                backgroundColor: UIColor?,
-                cornerRadius: CGFloat = 5,
-                image: UIImage? = nil) {
+                   titleColor: UIColor = .white,
+                   font: UIFont? = .semibold(12),
+                   backgroundColor: UIColor?,
+                   cornerRadius: CGFloat = 5,
+                   image: UIImage? = nil) {
+        
         contentView.backgroundColor = backgroundColor
         contentView.layer.cornerRadius = cornerRadius
         stampLabel.text = title
@@ -32,4 +33,9 @@ final class StampView: NibView {
             imageContainerView.isHidden = true
         }
     }
+    
+    
+    
+    
+    
 }
