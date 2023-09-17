@@ -16,10 +16,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var campaignView: StampView!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var statusImageView: UIImageView!
     @IBOutlet private weak var statusView: StampView!
     @IBOutlet private weak var descriptonLabel: UILabel!
-    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,9 +29,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     private func setUpUI() {
         containerView.backgroundColor = .white
-        titleLabel.textColor = .secondaryColor
+        titleLabel.textColor = .gray
         titleLabel.font = .bold(14)
-        descriptonLabel.textColor = .secondaryColor
+        descriptonLabel.textColor = .red
         descriptonLabel.font = .regular(12)
     }
     
@@ -59,8 +58,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
            let backgroundColorString = ratingBackgroundColor {
             ratingView.configure(title: String(rating),
                                  font: .bold(14),
-                                 backgroundColor: UIColor(hex: backgroundColorString),
-                                 image: UIImage(named: "goIcon"))
+                                 backgroundColor: .systemGreen )
             ratingView.isHidden = false
         } else {
             ratingView.isHidden = true
@@ -69,7 +67,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     private func prepareCampaingView(campaingText: String?) {
         if let campaingText = campaingText, !campaingText.isEmpty {
-            campaignView.configure(title: campaingText, backgroundColor: .primaryColor)
+            campaignView.configure(title: campaingText, backgroundColor: .darkGray)
             campaignView.isHidden = false
         } else {
             campaignView.isHidden = true
@@ -78,7 +76,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     private func prepareStatusView(isClosed: Bool?) {
         if isClosed ?? false {
-            statusView.configure(title: "Kapalı", backgroundColor: .errorColor)
+            statusView.configure(title: "Kapalı", backgroundColor: .red)
             statusView.isHidden = false
         } else {
             statusView.isHidden = true

@@ -23,11 +23,11 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Lato-Thin</string>
-		<string>Lato-Bold</string>
-		<string>Lato-Regular</string>
-		<string>Lato-Semibold</string>
-		<string>Lato-Light</string>
+		<string>Lato-Thin.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-Semibold.ttf</string>
+		<string>Lato-Light.ttf</string>
 	</array>
 </dict>
 </plist>
