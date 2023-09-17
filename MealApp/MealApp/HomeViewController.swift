@@ -21,13 +21,15 @@ extension HomeViewController {
 class HomeViewController: UIViewController {
     let networkManager: NetworkManager<HomeEndpointItem> = NetworkManager()
     @IBOutlet private weak var restaurantsCollectionView: UICollectionView!
-    private var widgets: [Widget]?
+    private var widgets: [Widget] = []
+    private var href : String = "page=1"
+    private var shouldFetchNextPage: Bool = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareCollectionView()
-        fetchWidgets()
+        fetchWidgets(query: href)
     }
     
     private func prepareCollectionView() {
@@ -38,14 +40,18 @@ class HomeViewController: UIViewController {
     }
     
     
-    private func fetchWidgets() {
-        networkManager.request(endpoint: .homepage(query: "page=1"), type: HomeResponse.self) { [weak self] result in
+    private func fetchWidgets(query: String) {
+        networkManager.request(endpoint: .homepage(query: query), type: HomeResponse.self) { [weak self] result in
             switch result {
             case .success(let response):
-                self?.widgets = response.widgets
+                if let widgets = response.widgets {
+                    self?.shouldFetchNextPage = !widgets.isEmpty
+                    self?.widgets.append(contentsOf: widgets)
+                } else {
+                    self?.shouldFetchNextPage = false
+                }
+                self?.href = response.href ?? ""
                 self?.restaurantsCollectionView.reloadData()
-                print(response)
-                break
             case .failure(let error):
                 print(error)
                 break
@@ -62,13 +68,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        widgets?.count ?? .zero
+        widgets.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeCell(cellType: RestaurantCollectionViewCell.self, indexPath: indexPath)
         //cell configure
-       if let restaurant = widgets?[indexPath.item].restaurants?.first {
+       if let restaurant = widgets[indexPath.item].restaurants?.first {
             cell.configure(restaurant: restaurant)
         }
         
@@ -90,3 +96,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == (widgets.count - 1), shouldFetchNextPage {
+            fetchWidgets(query: href)
+        }
+    }
+}
