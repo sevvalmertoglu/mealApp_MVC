@@ -29,9 +29,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     private func setUpUI() {
         containerView.backgroundColor = .white
-        titleLabel.textColor = .gray
+        titleLabel.textColor = .black
         titleLabel.font = .bold(14)
-        descriptonLabel.textColor = .red
+        descriptonLabel.textColor = .gray
         descriptonLabel.font = .regular(12)
     }
     
@@ -67,7 +67,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     
     private func prepareCampaingView(campaingText: String?) {
         if let campaingText = campaingText, !campaingText.isEmpty {
-            campaignView.configure(title: campaingText, backgroundColor: .darkGray)
+            campaignView.configure(title: campaingText, backgroundColor: .orange)
             campaignView.isHidden = false
         } else {
             campaignView.isHidden = true
