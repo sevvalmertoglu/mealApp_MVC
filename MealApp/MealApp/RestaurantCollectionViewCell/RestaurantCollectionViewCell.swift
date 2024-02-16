@@ -30,9 +30,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     private func setUpUI() {
         containerView.backgroundColor = .white
         titleLabel.textColor = .black
-        titleLabel.font = .bold(14)
+        titleLabel.font = .systemFont(ofSize: 14)
         descriptonLabel.textColor = .gray
-        descriptonLabel.font = .regular(12)
+        descriptonLabel.font = .systemFont(ofSize: 12)
     }
     
     func configure(restaurant: Restaurant) {
@@ -57,7 +57,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         if let rating = rating,
            let backgroundColorString = ratingBackgroundColor {
             ratingView.configure(title: String(rating),
-                                 font: .bold(14),
+                                 font: .systemFont(ofSize: 14),
                                  backgroundColor: .systemGreen )
             ratingView.isHidden = false
         } else {
@@ -84,8 +84,8 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     }
     
     private func prepareDescriptionView(_ restaurant: Restaurant) {
-        let fontRegular: UIFont = .regular(14)
-        let fontLight: UIFont = .light(10)
+        let fontRegular: UIFont = .systemFont(ofSize: 14)
+        let fontLight: UIFont = .systemFont(ofSize: 10)
         let bullet: String = " \u{2022} " //nokta şeklinin kodu
         let bulletString = NSMutableAttributedString(string: bullet,
                                            attributes: [NSAttributedString.Key.font : fontLight,

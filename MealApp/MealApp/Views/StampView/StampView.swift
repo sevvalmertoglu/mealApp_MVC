@@ -14,7 +14,7 @@ final class StampView: NibView {
     
     func configure(title: String,
                    titleColor: UIColor = .white,
-                   font: UIFont? = .semibold(12),
+                   font: UIFont? = .systemFont(ofSize: 12),
                    backgroundColor: UIColor = .red,
                    cornerRadius: CGFloat = 5 ) {
         
