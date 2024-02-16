@@ -33,6 +33,9 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         titleLabel.font = .systemFont(ofSize: 14)
         descriptonLabel.textColor = .gray
         descriptonLabel.font = .systemFont(ofSize: 12)
+        bannerImageView.layer.cornerRadius = 25
+        containerView.layer.masksToBounds = true
+        containerView.layer.cornerRadius = 25
     }
     
     func configure(restaurant: Restaurant) {
